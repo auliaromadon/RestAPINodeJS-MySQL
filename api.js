@@ -185,7 +185,7 @@ app.get("/user", (req, res) => {
         } else {
             response = {
                 count: result.length, // jumlah data
-                user: result => {password: md5(password)}
+                user: result
             }
         }
         res.json(response) // send response
